@@ -14,8 +14,6 @@ from speech_recognition import Microphone, Recognizer, UnknownValueError
 
 
 load_dotenv()
-import os
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/Users/huuthinhtran/Documents/Personal/Venv/alloy-voice-assistant/focus-cargo-457510-k4-8cbd5d7deb0e.json"
 
 
 class WebcamStream:
@@ -120,9 +118,6 @@ webcam_stream = WebcamStream().start()
 
 model = ChatGoogleGenerativeAI(model="gemini-2.0-flash")
 
-# You can use OpenAI's GPT-4o model instead of Gemini Flash
-# by uncommenting the following line:
-#model = ChatOpenAI(model="gpt-4o")
 
 assistant = Assistant(model)
 

@@ -15,7 +15,6 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from speech_recognition import Microphone, Recognizer, UnknownValueError
 import os
 
-os.environ["KMP_DUPLICATE_LIB_OK"] = "True"
 load_dotenv()
 
 class DesktopScreenshot:
